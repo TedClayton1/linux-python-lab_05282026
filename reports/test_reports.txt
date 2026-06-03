@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+echo "Starting audit process ..."
+
+python scripts/check_usage.py
