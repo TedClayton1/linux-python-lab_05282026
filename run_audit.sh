@@ -16,5 +16,14 @@ else
     echo "ERROR: Data file not found."
 fi
 
+echo "Listing project files..."
+ls
+
+echo "Displaying server data..."
+cat data/server_usage.txt
+
+echo "Number of servers:"
+wc -l data/server_usage.txt
+
 echo "Audit complete."
 echo "Report saved to reports/disk_report.txt"
