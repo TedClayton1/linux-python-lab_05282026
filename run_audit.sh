@@ -2,6 +2,8 @@
 
 echo "Starting server audit now at this time..."
 echo "Current Date and Time: $(date)"
+echo "Running as a user: $(whoami)"
+echo "Current directory: $(pwd)"
 
 mkdir -p reports
 
