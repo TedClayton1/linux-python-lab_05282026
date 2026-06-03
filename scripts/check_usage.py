@@ -12,9 +12,11 @@ with open(file_path, "r") as file:
 
         server_name, usage = line.split(",")
 
-        usage = int(usage)
+        usage = int(usage)        
 
-        if usage >= 80:
+        if usage >= 90:
+            print(f"CRITICAL: {server_name} is at {usage}% disk usage")
+        elif usage >= 80:
             print(f"WARNING: {server_name} is at {usage}% disk usage")
         else:
             print(f"OK: {server_name} is at {usage}% disk usage")
