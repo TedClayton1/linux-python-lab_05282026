@@ -1,4 +1,4 @@
-print("Hello World")
+ 
 
 
 file_path = "data/server_usage.txt"

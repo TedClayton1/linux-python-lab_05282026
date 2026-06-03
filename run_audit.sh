@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "Starting server audit..."
+echo "Starting server audit now at this time..."
+echo "Current Date and Time: $(date)"
 
 mkdir -p reports
 
