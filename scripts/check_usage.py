@@ -5,6 +5,8 @@ file_path = "data/server_usage.txt"
 
 print("SERVER DISK USAGE REPORT")
 print("========================")
+print("Server audit started at:", __import__("datetime").datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+print("Reading server usage data from file...")
 
 with open(file_path, "r") as file:
     for line in file:
